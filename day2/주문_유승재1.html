@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    * {
+      font-family: 'Pretendard-Regular', Arial, sans-serif;
+    }
+
+    .container {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .img_area {
+      display: flex;
+      justify-content: center;
+    }
+
+    .img_area img {
+      width: 40%;
+      height: 40%;
+      justify-content: center;
+    }
+
+    .info_area {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .order_area {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .order_area button {
+      display: block;
+      width: 100px;
+      height: 50px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color : rgba(127, 121, 121, 0.3);
+      border-radius: 10px;
+      border: none;
+    }
+
+    /* 헤더 */
+    .header {
+      display: flex;
+      justify-content: center;
+    }
+
+    .inner img {
+      width: 400px;
+      height: 200px;
+    }
+    
+    .inner ul {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .inner li {
+      display: inline;
+      list-style: none;
+    }
+
+    /* 테이블 */
+    .table-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    
+    .spec-table {
+      border-collapse: collapse;
+      background-color: white;
+    }
+    
+    .spec-table td {
+      border: 1px solid #ddd;
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .spec-table td:first-child {
+      font-weight: 500;
+      color: black;
+    }
+    
+    .spec-table td:last-child {
+      background-color: white;
+      font-weight: 600;
+      color: black;
+    }
+  </style>
+</head>
+<header class="header">
+  <div class="inner">
+    <a href="https://districtvision.com/"><img src="https://helloglasses.com/wp-content/uploads/2023/10/dv_logo_journal.png" alt=""></a>
+    <ul>
+      <li>Man</li>
+      <li>Woman</li>
+      <li>Search</li>
+    </ul>
+  </div>
+</header>
+
+<body>
+  <div class="container">
+    <div class="img_area">
+      <img
+        src="https://ecimg.cafe24img.com/pg297b74781499009/outofall/web/product/extra/small/20230703/cf23ddb166ab0e784d4a668a22586e79.jpg"
+        alt="디스트릭트 비전 타케요시">
+    </div>
+    <div class="info_area">
+      <h1>DISTRICT VISION TAKEYOSHI</h1>
+      <h2>디스트릭트 비전 타케요시</h2>
+      <p>
+        District Vision의 아이웨어 시스템은 뉴욕의 운동 선수들과
+        일본의 공학자들이 참여한 2년의 테스트 기간을 걸쳐 개발되었습니다.
+      </p>
+      <p>444,900원</p>
+    </div>
+    
+    <div class="order_area">
+      <h3>Information</h3>
+      <div class="table-container">
+        <table class="spec-table">
+          <tr>
+            <td>프레임 넓이</td>
+            <td>136mm</td>
+          </tr>
+          <tr>
+            <td>템플 길이</td>
+            <td>125mm</td>
+          </tr>
+        </table>
+        
+        <table class="spec-table">
+          <tr>
+            <td>빛 투과</td>
+            <td>10.29%</td>
+          </tr>
+          <tr>
+            <td>무게</td>
+            <td>24g</td>
+          </tr>
+        </table>
+      </div>
+      
+      <button>주문하기</button>
+    </div>
+  </div>
+</body>
+
+</html>

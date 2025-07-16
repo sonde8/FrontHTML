@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .header img {
+      width: 500px;
+      height: 200px;
+    }
+
+    * {
+      font-family: 'Pretendard-Regular', Arial, sans-serif;
+    }
+
+    .container {
+      width: 50%;
+      margin: 0 auto;
+      /* border: 1px solid gray; */
+    }
+
+    .img_area {
+      display: flex;
+      justify-content: center;
+    }
+
+    .img_area img {
+      width: 40%;
+      height: 40%;
+      justify-content: center;
+    }
+
+    .info_area {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .order_area {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .order_area input {
+      width: auto;
+      text-align: center;
+      width: 200px;
+    }
+
+    .order_area button {
+      display: block;
+      width: 100px;
+      height: 50px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color : rgba(127, 121, 121, 0.3);
+      border-radius: 10px;
+      border: none;
+    }
+
+    .order_area select {
+      width: 200px;
+      height: 21px;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+    }
+
+    .inner img {
+      width: 400px;
+      height: 200px;
+    }
+    
+    .inner ul {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .inner li {
+      display: inline;
+      list-style: none;
+    }
+  </style>
+</head>
+<header class="header">
+  <div class="inner">
+    <a href="https://districtvision.com/"><img src="https://helloglasses.com/wp-content/uploads/2023/10/dv_logo_journal.png" alt=""></a>
+    <ul>
+      <li>Man</li>
+      <li>Woman</li>
+      <li>Search</li>
+    </ul>
+  </div>
+</header>
+
+<body>
+  <div class="container">
+    <div class="img_area">
+      <img
+        src="https://ecimg.cafe24img.com/pg297b74781499009/outofall/web/product/extra/small/20230703/cf23ddb166ab0e784d4a668a22586e79.jpg"
+        alt="디스트릭트 비전 타케요시">
+    </div>
+    <div class="info_area">
+      <h1>DISTRICT VISION TAKEYOSHI</h1>
+      <h2>디스트릭트 비전 타케요시</h2>
+      <p>
+        District Vision의 아이웨어 시스템은 뉴욕의 운동 선수들과
+        일본의 공학자들이 참여한 2년의 테스트 기간을 걸쳐 개발되었습니다.
+      </p>
+      <p>444,900원</p>
+    </div>
+
+    <div class="order_area">
+      <h3>Name</h3>
+      <input type="text">
+
+      <h3>Color</h3>
+      <select>
+        <option selected>Select.</option>
+        <option>블랙</option>
+        <option>화이트</option>
+        <option>그린</option>
+      </select>
+
+      <h3>PhoneNumber</h3>
+      <input type="tel" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" placeholder="000-0000-0000">
+
+      <h3>Address</h3>
+      <input type="text">
+
+      <button>Order</button>
+    </div>
+  </div>
+</body>
+
+</html>

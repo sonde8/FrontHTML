@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Pretendard-Regular', Arial, sans-serif;
+}
+
+/* 헤더 css */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner img {
+  width: 300px;
+  height: 90px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.menu {
+  margin-right: 20px;
+}
+
+/* 바디 css */
+
+.container ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.container li {
+  list-style: none;
+  /* margin: 10px; */
+  width: 25%;
+}
+
+.discript{
+  font-size: 15px;
+}
+
+.price {
+  font-size: 13px;
+}
+
+.brand {
+  font-size: 13px;
+  color: gray;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 400px;
+}
+
+.thumbnail img{
+  width: 100%;
+  height: 100%;
+}
+
+/* 풋터 css */
+.footer{
+  background-color: #40E0D0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer li {
+  display: inline-block;
+  list-style: none;
+  width: 23%;
+}
+
+.store_img {
+  background-image: url('https://ecimg.cafe24img.com/pg297b74781499009/outofall/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/5fdd2a4c6a0697458f07fea3a8695c08.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 335px;
+  height: 171px;
+}
+
+.store_img1 {
+  background-image: url('https://ecimg.cafe24img.com/pg297b74781499009/outofall/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/b8fd57a1e855c28211af4788ac2a0698.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 335px;
+  height: 171px;
+}
+
+.banner {
+  overflow: auto;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.footer_info {
+  font-size: 12px;
+  margin-left: 40px;
+}
+
