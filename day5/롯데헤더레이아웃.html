@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .header {
+      display: flex;
+      border: 1px solid black;
+      height: 200px;
+    }
+
+    .header > div {
+      border: 1px solid black;
+      width: 33.3%;
+      height: 100%;
+    }
+
+    .title-wrap {
+      position: relative;
+    }
+
+    .title-wrap img {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+    /* 검색바 */
+    .search-wrap {
+      position: relative;
+    }
+    
+    .search {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+    }
+
+
+    input[type=text] {
+      width: 400px;
+      height: 40px;
+      border-radius: 10px 0px 0px 10px;
+      border: 0.1px solid #bababa;
+    }
+
+    button {
+      width: 50px;
+      height: 43px;
+      border-radius: 0px 10px 10px 0px;
+    }
+
+    .menu-wrap {
+      position: relative;
+    }
+
+    .menu-wrap ul {
+      position: absolute;
+      list-style: none;
+      display: flex;
+      right: 0;
+      top: 30px;
+
+      font-size: 12px;
+    }
+
+    .menu-wrap li {
+      padding-right: 10px;
+    }
+
+    .menu-wrap li img {
+      margin-left: 5px;
+    }
+
+    span {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <!-- 타이틀 영역 -->
+    <div class="title-wrap">
+      <img src="./2.gif" alt="">
+    </div>
+
+    <!-- 검색 -->
+    <div class="search-wrap">
+      <div class="search">
+        <input type="text">
+        <button>조회</button>
+      </div>
+    </div>
+
+    <!-- 메뉴 -->
+    <div class="menu-wrap">
+      <ul>
+        <li>
+          <img src="./1.png" alt="">
+          <span>로그인</span>
+        </li>
+        <li>
+          <img src="./3.png" alt="">
+          <span>로그인</span>
+        </li>
+        <li>
+          <img src="./4.png" alt="">
+          <span>로그인</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

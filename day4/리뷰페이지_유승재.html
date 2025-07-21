@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-style: normal;
+    }
+
+    * {
+      font-family: 'Pretendard-Regular', Arial, sans-serif;
+    }
+
+    /* 메인 파트 */
+    .container {
+      width: 900px;
+      border: 1px solid black;
+      margin: 0 auto;
+    }
+
+    .title {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 30px;
+    }
+    
+    .review-part ul{
+      height: 350px;
+      list-style: none;
+      display: flex;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .review-part li {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .rate {
+      text-align: center;
+    }
+
+    .rate textarea {
+      width: 100%;
+      height:298px;
+      margin: 0;
+      padding: 0;
+    }
+    .review-part img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .review-part p {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    /* 테이블 */
+    .table-section {
+      margin-top: 40px;
+    }
+
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    table .table1 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    table .table2 {
+      border: 1px solid black;
+      width: 33%;
+      height: 20px;
+    }
+
+    .table2 select {
+      border: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* 판매점 정보 */
+    .shop-info {
+      padding: 20px;
+    }
+
+    .shop-info h3 {
+      font-size: 20px;
+    }
+    
+    .shop-info textarea {
+      width: 100%;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Review Detail</div>
+    <div class="review-part">
+      <ul>
+        <li class="image">
+          <p>이미지</p>
+          <img src="https://contents-cdn.viewus.co.kr/image/2023/07/CP-2022-0122/image-3ddf931e-39f9-4efb-92db-9b959e1a803c.png" alt="">
+        </li>
+        <li class="rate">
+          <p>맛평가 (후기)</p>
+          <textarea name="" id=""></textarea>
+        </li>
+      </ul>
+    </div>
+
+    <div class="table-section">
+      <table>
+        <tr>
+          <td class="table1">연령대</td>
+          <td class="table1">만족도</td>
+          <td class="table1">성별</td>
+        </tr>
+        <tr>
+          <td class="table2">
+            <select name="age" id="">
+              <option>선택해주세요</option>
+              <option>10대</option>
+              <option>20대</option>
+              <option>30대</option>
+              <option>40대</option>
+              <option>50대</option>
+              <option>60대</option>
+              <option>70대</option>
+              <option>80대</option>
+            </select>
+            <!-- <input type="text" style="border: none; width: 90%;"> -->
+          </td>
+          <td class="table2">
+            <select name="" id="">
+              <option value="">선택해주세요</option>
+              <option value="">⭐️</option>
+              <option value="">⭐️⭐️</option>
+              <option value="">⭐️⭐️⭐️</option>
+              <option value="">⭐️⭐️⭐️⭐️</option>
+              <option value="">⭐️⭐️⭐️⭐️⭐️</option>
+            </select>
+            <!-- <input type="text" style="border: none; width: 90%;"> -->
+          </td>
+          <td class="table2">
+            <select name="" id="">
+              <option value="">선택해주세요</option>
+              <option value="">남성</option>
+              <option value="">여성</option>
+            </select>
+            <!-- <input type="text" style="border: none; width: 90%;"> -->
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="shop-info">
+      <h3>판매점 정보</h3>
+      <textarea name="" id=""></textarea>
+    </div>
+    <div class="shop-info">
+      <h3>더 나누고 싶은 정보</h3>
+      <textarea name="" id=""></textarea>
+    </div>
+  </div>
+</body>
+
+</html>

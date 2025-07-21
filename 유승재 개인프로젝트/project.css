@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+* {
+  font-family: 'Pretendard-Regular', Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #23232C;
+}
+
+.container {
+  display: flex;
+}
+
+/* 메인 콘텐츠 부분 */
+
+/* 헤더 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #4f4f65;
+  padding: 0 20px 0
+}
+
+.menu-wrap ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu-wrap li {
+  padding-right: 10px;
+}
+
+.search input {
+  background-color: #23232C;
+  border: none;
+  padding: 0;
+  height: 32px;
+  margin-top: 21px;
+  width: 300px;
+  color: white;
+  outline: none;
+  font-size: 16px;
+}
+
+.search input::placeholder {
+  font-size: 20px;
+}
+
+.download,
+.login,
+.register {
+  padding: 10px;
+}
+
+.download {
+  color: #689f38;
+  border: 1px solid #689f38;
+  border-radius: 5px;
+}
+
+.download:hover {
+  border: 1px solid #4a7c2a;
+  background-color: rgba(104, 159, 56, 0.1);
+}
+
+/* .register {
+  border-radius: 5px;
+}
+
+.register:hover {
+  background-color: rgba(165, 166, 165, 0.1);
+} */
+
+.login {
+  background-color: #689f38;
+  border-radius: 5px;
+}
+
+.login:hover {
+  background-color: #598730;
+}
+
+/* 사이드바 부분 */
+.sidebar {
+  border-right: 0.5px solid #4f4f65;
+  width: 15%;
+  background-color: #1E1E26;
+  color: white;
+  min-height: 100vh;
+}
+
+.menu, .menu2 {
+  list-style: none;
+  font-weight: 100;
+}
+
+.menu img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu2 img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menu2 p {
+  margin-top: 70px;
+}
+
+.menu2 li {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+}
+
+/* 음악 부분 */
+.main-content {
+  width:90%;
+  background-color: #23232C;
+  color: white;
+  min-height: 100vh;
+}
+
+.music-layer {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.music {
+  height: 400px;
+  /* margin: 5px; */
+  width: 19%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.music:hover{
+  background-color: rgba(180, 180, 180, 0.1);
+}
+
+.music img {
+  width: 100%;
+  height: 300px;
+}
+
+.music img:hover {
+  filter: brightness(0.6);
+}
+
+.music-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.singer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffffb3;
+}

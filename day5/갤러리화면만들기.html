@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .gallery-wrap {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .board {
+      width: 500px;
+      height: 500px;
+      background-color: antiquewhite;
+    }
+
+    .prev {
+      position: absolute;
+      top: 220px;
+      left: -30px;
+      width: 30px;
+      height: 60px;
+      background-color: blue;
+    }
+
+    .next {
+      position: absolute;
+      top: 220px;
+      right: -30px;
+      width: 30px;
+      height: 60px;
+      background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="gallery-wrap">
+
+    <!-- 이미지 영역 -->
+    <div class="board"></div>
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</body>
+</html>
