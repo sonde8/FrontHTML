@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    let user, com, result;
+
+    // 반복 (승패가 날 때까지, 무승부면 반복)
+    while(true){
+      user = prompt("가위(0) 바위(1) 보(2)");
+      com = Math.floor(Math.random() *3); // 0~2까지
+      if(user != com){
+        break;
+      } // 두 개가 다르면 반복 탈출
+    }
+
+    // 사용자의 승패를 판단한다
+    if(user === com) {
+      result = '무승부';
+    }
+    else if(
+      (user === 0 && com === 2) || // 가위 vs 보
+      (user === 1 && com === 0) || // 바위 vs 가위  
+      (user === 2 && com === 1)    // 보 vs 바위
+    ) {
+      result = '승리';
+    }
+    else {
+      result = '패배';
+    }
+
+    alert(result)
+    console.log('사용자' + user);
+    console.log('컴퓨터' + com);
+    console.log('결과' + result);
+    
+    
+    
+
+  </script>
+</body>
+</html>
