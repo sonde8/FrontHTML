@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a=10, b=4, c=6;
+
+    let arr = [2, 4, 6];
+
+    console.log(arr[0]); // 2
+    arr[0] = 3;
+    console.log(arr[0]); // 3
+
+    for(i=0; i< arr.length; i++){
+      console.log(arr[i]);
+    }
+
+    // 2차원 배열
+    let arr2 = [
+      [2,4,6],
+      [8,9,10]
+    ];
+
+    arr2[1][1];
+
+    // 3차원 배열 : 2차원 배열을 요소로 가지는 배열
+    // 면, 행, 열로 변수에 접근
+    let arr3 = [
+      [
+        [2,4,6],
+        [8,9,10]
+      ],
+      [
+        [2,4,6],
+        [8,9,10]
+      ],
+    ];
+    
+  </script>
+</body>
+</html>
