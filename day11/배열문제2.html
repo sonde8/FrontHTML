@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 배열 거꾸로 출력하기
+    let arr = ["수박", "자두", "복숭아"]
+    for(let i=2; i>=0; i--){
+      console.log(arr[i]);
+    }
+
+    // 배열 내용을 거꾸로 한 새로운 배열 만들기
+    let arr2 = ["수박", "자두", "복숭아"];
+    let arr2New = [];
+
+    // 배열에 추가하는 기능
+    // push
+    for(let i=2; i>=0; i--){
+      arr2New.push(arr[i]);
+    }
+  </script>
+</body>
+</html>
