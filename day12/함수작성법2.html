@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // 함수표현식
+    // 함수는 변수에 저장하고 사용하는 문법
+    // 호이스팅 되지 않음
+    // 반드시 함수 선언 후 호출해야 함
+
+    let plus = function(){
+      let sum = 0;
+      for (let i = 0; i <= 10; i++) {
+        sum += i;
+      }
+      console.log(sum);
+    };
+
+    let plusVer2 = function(){
+      let sum = 0;
+      for (let i = 0; i <= 10; i++) {
+        sum += i;
+      }
+      return(sum);
+    };
+
+    result = plusVer2();
+    if(result == 50){
+      console.log("Good");
+    }
+
+
+  </script>
+</body>
+</html>

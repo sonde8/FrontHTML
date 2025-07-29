@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // 객체
+    // 속성(변수), 기능(매서드, 함수)으로 이루어진 독립적인 단위
+    // 속성은 키 : 값 형태로 사용 가능 
+
+    let turtle = {
+      name : "꼬부기",
+      species : "페닐슐라쿠터",
+      age : 5,
+      color : "초록색",
+      weight : "800g",
+      likesFood : "건새우",
+      
+      printInfo : function(){
+        // alert("거북");
+        alert(`${this.name}, ${this.age}살`);
+      },
+
+      eat : function(food){
+        if(food === "건새우"){
+          alert("몸을 흔들면서 좋아함");
+        }else{
+          alert("걍 먹음");
+        }
+      }
+    };
+
+    // 객체의 매서드(함수)에서 객체의 속성을 접근하기 위해선 this 키워드 사용
+    // this -> 자기자신을 의미하는 값
+
+    turtle.printInfo();
+    turtle.eat("건새우");
+    
+
+  </script>
+</body>
+</html>

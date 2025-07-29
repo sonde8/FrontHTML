@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script> 
+    function 인사하기1(name){
+      console.log(`안녕 ${name}`);
+    };
+    인사하기1("승재");
+
+    function 인사하기2(name){
+      console.log(`Hi ${name}`);
+    };
+    인사하기2("승재");
+
+    // 고차함수 만들기
+    // 매개변수로 함수를 받음
+
+    // 기능 : 인사하기
+    // 입력(매개변수) : 인사할 포멧형식 콜백
+    function 인사하기H(k, name){
+      console.log(k() + name); 
+    };
+
+    // 이름 있는 함수
+    // 이름 없는 함수
+    function formatK(){
+      return "안녕";
+    };
+
+    function formatE(){
+      return "Hi";
+    };
+
+
+    인사하기H(formatK, "승재"); // formatK 는 콜백함수
+    인사하기H(formatE, "승재"); // formatE 는 콜백함수
+
+    // 콜백함수 : 함수 호출 시 전달되거나 함수 또는 고차함수의 매개변수로 전달되는 함수를 의미
+
+
+  </script>
+</body>
+</html>

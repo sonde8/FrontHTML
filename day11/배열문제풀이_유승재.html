@@ -85,9 +85,6 @@
     }
     console.log(cnt);
 
-
-
-
     //9. 문제: 아래 prices 배열에서 1200보다 큰 숫자만 골라 새로운 배열에 저장하세요.
     const prices = [1000, 1500, 900, 1800, 2000, 1200];
     let over1200 = [];
@@ -107,13 +104,17 @@
 
 
     //11.  문제 :아래  fruits 배열에  자두 포함 여부 true, false 출력하시오 
+    // let fruits = ["자두", "복숭아", "포도"];
+    // for (let i = 0; i < 3; i++) {
+    //   if (fruits[i] == "자두") {
+    //     console.log(true);
+    //   } else {
+    //     console.log(false);
+    //   }
+    // }
     let fruits = ["자두", "복숭아", "포도"];
-    for (let i = 0; i < 3; i++) {
-      if (fruits[i] == "자두") {
-        console.log(true);
-      } else {
-        console.log(false);
-      }
+    if (fruits.includes("자두")) {
+      console.log(true);
     }
 
     //12.  문제 :아래  fruits 배열을  거꾸로 출력하시오  

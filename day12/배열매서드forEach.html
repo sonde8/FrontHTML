@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let scores = [90, 42, 100];
+
+    // 모든 학생의 점수 출력
+    for(let i=0; i<scores.length; i++){
+      console.log(scores[i]);
+    }
+    
+    // 배열의 매서드를 제공함
+    // forEach 사용하기
+    
+    // 배열.forEach(콜백함수);
+    // forEach() 매서드 내에서 반복이 수행됨
+    scores.forEach(function(){
+      console.log(scores);
+    });
+
+    scores.forEach(function(item, index){
+      console.log(item, index);
+    });
+
+    scores.forEach((item)=>{
+      console.log(item + "!!!!");
+    })
+  </script>
+</body>
+</html>

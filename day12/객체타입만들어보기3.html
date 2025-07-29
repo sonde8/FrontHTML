@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let snack={
+      name : "맛동산",
+      price : 3500,
+      maker : "해태",
+
+      showInfo : function(){
+        console.log(`이름 : ${this.name}, 가격 : ${this.price}, 브랜드 : ${this.maker}`);
+        console.log(this.name + "가격");
+        
+      }
+    }
+
+    snack.showInfo();
+  </script>
+</body>
+</html>
