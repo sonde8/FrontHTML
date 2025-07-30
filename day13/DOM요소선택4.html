@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function change(){
+      const items = document.querySelectorAll(".item");
+      // for(let i=0; i<items.length; i++){
+      //   const item = items[i];
+      //   item.style.backgroundColor  = "blue";
+      // }
+
+      // forEach
+      items.forEach(function(item){
+        item.style.backgroundColor  = "blue";
+      });
+
+      // 화살표 함수
+      // items.forEach(()=>{});
+      items.forEach(item => item.style.backgroundColor  = "blue");
+      
+    };
+    
+    function unChange(){
+      const items = document.querySelectorAll(".item");
+      for(let i=0; i<items.length; i++){
+        const item = items[i];
+        item.style.backgroundColor  = "";
+      }
+    };
+  </script>
+</head>
+<body>
+  
+  <h2>querySelectorAll로 요소 선택하기</h2>
+  <p> 주의사항 : 모두 선택하기이므로 선택대상이 한 개여도 배열로 반환</p>
+
+  <div class="item">item1</div>
+  <div class="item">item2</div>
+
+  <button onclick="change()">스타일변겅</button>
+  <button onclick="unChange()">스타일취소</button>
+</body>
+</html>

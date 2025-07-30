@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <script>
+    function changeImg(obj){ // 매개변수가 필요
+      obj.src = "./2.png";
+    };
+  </script>
 </head>
 <body>
-  <script>
-    let arr = [10,20,30];
+  
+  <img src="./1.png" alt="소년이미지" onclick="changeImg(this)">
 
-    let result = arr.reduce(function(total, current){
-      return total + current
-    }, 0);
-
-    console.log(result);
-    
-  </script>
 </body>
 </html>
