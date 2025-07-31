@@ -9,7 +9,6 @@
   <style>
     .wrap {
       width: 900px;
-      /* border:1px solid black;*/
       margin: 0 auto;
       font-size: 12px;
     }
@@ -31,10 +30,6 @@
       font-weight: bold;
       font-size: 20px;
       padding: 30px;
-    }
-
-    .total_wrap {
-      /* border:1px solid black;*/
     }
 
     #order {
@@ -71,7 +66,7 @@
       
       totalPrice();
       
-    }
+    };
     
     //금액이 변경되면 전체 금액을 갱신 
     function totalPrice() {
@@ -90,7 +85,7 @@
 
       const totalPrice = document.getElementById("total-price");
       totalPrice.textContent = sum ;
-    }
+    };
 
     //체크되어 있는 항목 삭제하기
     //금액갱신하기
@@ -107,7 +102,7 @@
 
       // 삭제가 되면 전체 금액 갱신하기
       totalPrice();
-    }
+    };
   </script>
 </head>
 
@@ -125,7 +120,6 @@
           <th>수량</th>
           <th>금액</th>
         </tr>
-
       </thead>
 
       <tbody id="list">

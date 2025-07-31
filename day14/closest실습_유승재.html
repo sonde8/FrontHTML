@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    function getContent(item){
+      const obj = item.closest(".wrap");
+      // console.log(obj);
+      
+      const content = obj.querySelector(".treasure");
+      alert(content.innerHTML);
+    };
+
+    function addImg(){
+      const img = document.createElement("img");
+      img.src = "https://diamonds.co.kr/_sys/_upload/image/201209/06/134689444591.jpg";
+      img.style.width = "200px"
+      img.style.height = "200px"
+
+      const wrap = document.querySelector(".img-wrap")
+      // console.log(wrap);
+      // console.log(img);
+      
+      wrap.appendChild(img);
+    };
+    
+    function addImg2(){
+      const img = document.createElement("img");
+      img.src = "https://media.tiffany.com/is/image/tco/GTD_Color_Hero_Mobile";
+      img.style.width = "200px"
+      img.style.height = "200px"
+
+      const wrap = document.querySelector(".img-wrap")
+      // console.log(wrap);
+      // console.log(img);
+      
+      wrap.appendChild(img);
+    };
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div>
+      <span class="treasure">금</span>
+    </div>
+    <div>
+      <button onclick="getContent(this); addImg()">클릭</button>
+    </div>
+    <div class="img-wrap">
+
+    </div>
+  </div>
+  
+  <div class="wrap">
+    <div>
+      <span class="treasure">다이아</span>
+    </div>
+    <div>
+      <button onclick="getContent(this); addImg2()">클릭</button>
+    </div>
+    <div class="img-wrap">
+
+    </div>
+  </div>
+</body>
+</html>

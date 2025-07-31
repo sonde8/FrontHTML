@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function getLottoNumber1(){
+      const lottoNumbers = [2, 23, 43, 24, 13, 32];
+      return lottoNumbers;
+    };
+    let result = getLottoNumber1();
+    console.log(result);
+
+
+    function getLottoNumber2(){
+      const lottoNumbers = [];
+      while(lottoNumbers.length<6){
+        let random = Math.floor(Math.random()*45)+1 ;
+        // 중복 방지
+        if(!lottoNumbers.includes(random)){
+          lottoNumbers.push(random);
+        }
+      }
+      return lottoNumbers
+    };
+    let result1 = getLottoNumber2();
+    console.log(result1);
+
+
+
+  </script>
+</body>
+</html>
