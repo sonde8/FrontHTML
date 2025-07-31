@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .product-list {
+      display: flex;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .product-list>li {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+
+    .product-list>li img {
+      width: 300px;
+      height: 300px;
+      text-align: center;
+    }
+  </style>
+
+  <script>
+    function addProduct() {
+      // 서버로부터 데이터 받아오기
+      const productList = [
+        {
+          img: "https://www.8division.com/web/product/medium/202412/5bbd152fc117c137735ebcd333bca83d.jpeg",
+          title: "솔로이스트 본 쉐입 반지",
+          price: 299600
+        },
+        {
+          img: "https://www.8division.com/web/product/extra/small/202505/8ae831d15a21371e617de4568bd4150d.jpg",
+          title: "노스웍스 반지",
+          price: 180000
+        }
+      ];
+
+      // 배열 반복하면서 li 태그 생성하기
+      const wrap = document.querySelector(".product-list");
+      productList.forEach(function (item) {
+        const li = document.createElement("li");
+        li.innerHTML = `<img src="${item.img}" alt="">
+      <p>${item.title}</p>
+      <p>${item.price}/p>`;
+
+      // 부모 요소에 넣기
+      wrap.appendChild(li);
+      });
+
+    };
+  </script>
+</head>
+
+<body>
+
+  <button onclick="addProduct()">더보기</button>
+
+  <ul class="product-list">
+    <!-- <li>
+      <img src="https://www.8division.com/web/product/medium/202412/5bbd152fc117c137735ebcd333bca83d.jpeg" alt="">
+      <p>솔로이스트 본 쉐입 반지</p>
+      <p>299,600₩</p>
+    </li>
+    <li>
+      <img src="https://www.8division.com/web/product/medium/202412/5bbd152fc117c137735ebcd333bca83d.jpeg" alt="">
+      <p>솔로이스트 본 쉐입 반지</p>
+      <p>299,600₩</p>
+    </li> -->
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="ex1">
+    <span>div 안의 span</span>
+  </div>
+
+  <script>
+    // 선택하기
+    const ex1 = document.getElementById("ex1");
+
+    const content1 = ex1.innerHTML;
+    const content2 = ex1.textContent
+
+    console.log(content1); // div와 div 사이의 내용을 모두 가져옴 (html구조)
+    console.log(content2); // 내용만 가져옴
+    
+  </script>
+</body>
+</html>

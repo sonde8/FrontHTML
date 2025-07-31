@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function addImg(){
+      const imgTag = document.createElement("img");
+      imgTag.src = "https://mblogthumb-phinf.pstatic.net/MjAyMTA4MjJfMTk3/MDAxNjI5NTYxNTc2MTU0.40J2KZp4_5hwi9BOPuzG-OhTb47OCIzWhPNRbEn5o6Yg.v90o_lyR3eF1OM4nVjpUqaLbIkQ-kMnQk4f3qyKVvMAg.JPEG.chooddingg/IMG_5742.JPG?type=w800";
+      imgTag.alt = "무한상사";
+
+      const wrap = document.getElementById("wrap");
+      wrap.appendChild(imgTag);
+    };
+  </script>
+</head>
+<body>
+  <button onclick="addImg()">이미지 태그 생성</button>
+
+  <!-- 부모영역 -->
+  <div id="wrap"></div>
+</body>
+</html>
